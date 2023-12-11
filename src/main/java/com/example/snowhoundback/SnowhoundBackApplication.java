@@ -10,7 +10,4 @@ public class SnowhoundBackApplication {
 		SpringApplication.run(SnowhoundBackApplication.class, args);
 	}
 
-//	public String hello() {
-//		return "Hello hello";
-//	}
 }
