@@ -16,3 +16,7 @@ First you need to download [this docker file](https://github.com/SanderPalk/snow
 ### Setup
 * Run `mvn package`
 * Run ` java -jar target/snowhound-back-0.0.1-SNAPSHOT.jar`
+
+
+## Documentation
+Project full documentation can be found [here](https://docs.google.com/document/d/1XiCYjNyLiuy5Poq-KuyHmEZ3938igFe4qp9eVVc0Ryc/edit?usp=sharing)
