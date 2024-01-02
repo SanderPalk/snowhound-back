@@ -48,9 +48,9 @@ public class MovieService {
     movieRepository.deleteById(movie_id);
   }
 
-  @Transactional
-  public void updateMovieStatus(Integer movie_id, String status) {
+  public void updateMovieStatus(Integer movie_id, Boolean status) {
     Movie movie = movieRepository.findById(movie_id).orElseThrow(() -> new IllegalStateException("Movie with this id does not exist: " + movie_id));
-    movie.setStatus(Boolean.valueOf(status));
+    movie.setStatus(status);
+    movieRepository.save(movie);
   }
 }

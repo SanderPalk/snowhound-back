@@ -1,9 +1,6 @@
 package com.example.snowhoundback.movie;
 
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -34,9 +31,9 @@ public class MovieController {
     movieService.deleteMovie(movie_id);
   }
 
-  @PutMapping(path = "{movie_id}/status")
-  public void updateMovieStatus(@PathVariable("movie_id") Integer movie_id, @RequestBody String status) {
-    System.out.println(status);
-    movieService.updateMovieStatus(movie_id, status);
+  @PutMapping(path = "{id}/status")
+  public void updateMovieStatus(@PathVariable("id") Integer id, @RequestBody Movie movie) {
+    System.out.println("Updating movie id: " + id + " DATA: " + movie.getStatus());
+    movieService.updateMovieStatus(id, movie.getStatus());
   }
 }
