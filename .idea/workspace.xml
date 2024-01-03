@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59695805-b108-4c36-8724-9bb6928819be" name="Changes" comment="master readme update">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/snowhoundback/movie/MovieServiceTest.java" afterDir="false" />
+    <list default="true" id="59695805-b108-4c36-8724-9bb6928819be" name="Changes" comment="master added tests for post and get request">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/movie/FilmConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/movie/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/movie/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/movie/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/movie/MovieController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/movie/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/movie/MovieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/snowhoundback/movie/MovieServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/snowhoundback/movie/MovieServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +98,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieServiceTest.AddNewFilmWithoutCategories_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="snowhound-back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.snowhoundback.movie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.snowhoundback.movie" />
+      <option name="MAIN_CLASS_NAME" value="com.example.snowhoundback.movie.MovieServiceTest" />
+      <option name="METHOD_NAME" value="AddNewFilmWithoutCategories_Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieServiceTest.AddNewMovieWithExistingEIDRCode_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="snowhound-back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.snowhoundback.movie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.snowhoundback.movie" />
+      <option name="MAIN_CLASS_NAME" value="com.example.snowhoundback.movie.MovieServiceTest" />
+      <option name="METHOD_NAME" value="AddNewMovieWithExistingEIDRCode_Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SnowhoundBackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="snowhound-back" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.snowhoundback.SnowhoundBackApplication" />
@@ -115,6 +147,8 @@
       <list>
         <item itemvalue="JUnit.MovieServiceTest" />
         <item itemvalue="Spring Boot.SnowhoundBackApplication" />
+        <item itemvalue="JUnit.MovieServiceTest.AddNewMovieWithExistingEIDRCode_Test" />
+        <item itemvalue="JUnit.MovieServiceTest.AddNewFilmWithoutCategories_Test" />
         <item itemvalue="Spring Boot.SnowhoundBackApplication" />
       </list>
     </recent_temporary>
@@ -174,11 +208,30 @@
       <option name="project" value="LOCAL" />
       <updated>1704200371809</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="master added tests for post and get request">
+      <option name="closed" value="true" />
+      <created>1704286717631</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704286717631</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="master typo fix" />
@@ -186,7 +239,8 @@
     <MESSAGE value="master remove commented code, update readme" />
     <MESSAGE value="master updateMovieStatus method to CRUD operation from @Transactional" />
     <MESSAGE value="master readme update" />
-    <option name="LAST_COMMIT_MESSAGE" value="master readme update" />
+    <MESSAGE value="master added tests for post and get request" />
+    <option name="LAST_COMMIT_MESSAGE" value="master added tests for post and get request" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

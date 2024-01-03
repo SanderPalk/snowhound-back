@@ -97,17 +97,4 @@ public class Movie {
   public void setCategories(Set<Category> categories) {
     this.categories = categories;
   }
-
-  @Override
-  public String toString() {
-    return "Movie{" +
-            "id=" + id +
-            ", name='" + name + '\'' +
-            ", EIDR='" + EIDR + '\'' +
-            ", rating=" + rating +
-            ", year=" + year +
-            ", status=" + status +
-            ", categories=" + getCategories() +
-            '}';
-  }
 }

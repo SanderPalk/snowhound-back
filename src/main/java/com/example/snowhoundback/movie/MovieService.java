@@ -43,13 +43,14 @@ public class MovieService {
   public void deleteMovie(Integer movie_id) {
     boolean exists = movieRepository.existsById(movie_id);
     if (!exists) {
-      throw new IllegalStateException("No movie with this id:" + movie_id);
+      throw new ResponseStatusException(
+              HttpStatus.NOT_FOUND, "No movie with this id:" + movie_id);
     }
     movieRepository.deleteById(movie_id);
   }
 
   public void updateMovieStatus(Integer movie_id, Boolean status) {
-    Movie movie = movieRepository.findById(movie_id).orElseThrow(() -> new IllegalStateException("Movie with this id does not exist: " + movie_id));
+    Movie movie = movieRepository.findById(movie_id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Movie with this id does not exist: " + movie_id));
     movie.setStatus(status);
     movieRepository.save(movie);
   }
