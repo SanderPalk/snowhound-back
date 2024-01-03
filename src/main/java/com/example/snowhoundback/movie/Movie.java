@@ -1,6 +1,5 @@
 package com.example.snowhoundback.movie;
 
-import com.example.snowhoundback.category.Category;
 import jakarta.persistence.*;
 
 import java.util.Set;
@@ -27,12 +26,8 @@ public class Movie {
   @Column (nullable = false)
   private Boolean status = false;
 
-  @ManyToMany
-          @JoinTable(name = "movie_category",
-          joinColumns = @JoinColumn(name = "movie_id"),
-          inverseJoinColumns = @JoinColumn(name = "category_id"))
+  @Column (nullable = true)
   private Set<Category> categories;
-
   public Movie() {
   }
 

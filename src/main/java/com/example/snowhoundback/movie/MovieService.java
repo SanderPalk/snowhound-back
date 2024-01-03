@@ -27,7 +27,7 @@ public class MovieService {
 
     Optional<Movie> filmOptional = movieRepository.findFilmByEIDR(film.getEIDR());
 
-    if (film.getCategories().isEmpty()) {
+    if (film.getCategories() == null) {
       throw new ResponseStatusException(
               HttpStatus.BAD_REQUEST, "No categories assigned"
       );

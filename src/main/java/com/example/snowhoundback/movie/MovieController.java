@@ -3,6 +3,8 @@ package com.example.snowhoundback.movie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.EnumSet;
 import java.util.List;
 
 @RestController
@@ -19,6 +21,11 @@ public class MovieController {
   @GetMapping
   public List<Movie> getMovies() {
     return movieService.getFilms();
+  }
+
+  @GetMapping(path = "/categories")
+  public List<Category> getCategories() {
+    return new ArrayList<>(EnumSet.allOf(Category.class));
   }
 
   @PostMapping
