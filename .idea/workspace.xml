@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59695805-b108-4c36-8724-9bb6928819be" name="Changes" comment="master readme update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/movie/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/movie/CategoryConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/snowhoundback/movie/MovieServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/SnowhoundBackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/SnowhoundBackApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/category/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/category/CategoryConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/category/CategoryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/category/CategoryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/category/CategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/movie/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/movie/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/movie/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/movie/MovieController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/movie/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/snowhoundback/movie/MovieService.java" afterDir="false" />
@@ -47,6 +41,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="usePluginRegistry" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -68,14 +63,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "categories-enum",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/Sander/Documents/Snowhound/snowhound-back",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "reference.idesettings.debugger.capture",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -84,7 +79,25 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager" selected="JUnit.MovieServiceTest">
+    <configuration name="MovieServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="snowhound-back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.snowhoundback.movie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.snowhoundback.movie" />
+      <option name="MAIN_CLASS_NAME" value="com.example.snowhoundback.movie.MovieServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SnowhoundBackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="snowhound-back" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.snowhoundback.SnowhoundBackApplication" />
@@ -100,6 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieServiceTest" />
+        <item itemvalue="Spring Boot.SnowhoundBackApplication" />
         <item itemvalue="Spring Boot.SnowhoundBackApplication" />
       </list>
     </recent_temporary>
@@ -172,6 +187,13 @@
     <MESSAGE value="master updateMovieStatus method to CRUD operation from @Transactional" />
     <MESSAGE value="master readme update" />
     <option name="LAST_COMMIT_MESSAGE" value="master readme update" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="((DefaultWebTestClient)webTestClient).requestIndex" custom="org.springframework.test.web.reactive.server.DefaultWebTestClient" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,6 +1,7 @@
 package com.example.snowhoundback.movie;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -29,8 +30,8 @@ public class MovieController {
   }
 
   @PostMapping
-  public void registerNewMovies(@RequestBody Movie film) {
-    movieService.addNewFilm(film);
+  public ResponseEntity<Movie> registerNewMovies(@RequestBody Movie film) {
+    return movieService.addNewFilm(film);
   }
 
   @DeleteMapping(path = "{movie_id}")

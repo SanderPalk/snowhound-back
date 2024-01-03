@@ -2,6 +2,7 @@ package com.example.snowhoundback.movie;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -21,7 +22,7 @@ public class MovieService {
     return movieRepository.findAll();
   }
 
-  public void addNewFilm(Movie film) {
+  public ResponseEntity<Movie> addNewFilm(Movie film) {
 
     Optional<Movie> filmOptional = movieRepository.findFilmByEIDR(film.getEIDR());
 
@@ -36,6 +37,7 @@ public class MovieService {
       );
     }
     movieRepository.save(film);
+    return ResponseEntity.ok(film);
   }
 
   public void deleteMovie(Integer movie_id) {

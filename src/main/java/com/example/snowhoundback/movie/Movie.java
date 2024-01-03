@@ -1,9 +1,10 @@
 package com.example.snowhoundback.movie;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 
 import java.util.Set;
-
+@Builder
 @Entity
 @Table
 public class Movie {
